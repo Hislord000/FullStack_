@@ -1,0 +1,39 @@
+/* Container Styling */
+
+.col-auto{
+    display:flex;    
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color:rgb(198, 143, 61);
+    justify-content: center;
+    align-items:baseline;
+   
+}
+
+/* Header logo Styling */
+
+.menu-area, .container .row{
+    margin:0px;
+    width: 100%;
+
+ ul{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    list-style: none;
+    margin:0px;
+    background-color: aqua; 
+}
+
+
+li{
+    margin: 10px;
+    padding: 5px;
+    background-color: red;
+    
+} 
+
+.header-logo, .mainmenu, .header-button{
+    margin:5px;
+}
