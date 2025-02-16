@@ -1,39 +1,52 @@
 /* Container Styling */
-
 .col-auto{
     display:flex;    
     flex-direction: row;
     flex-wrap: wrap;
-    background-color:rgb(198, 143, 61);
+    background-color:rgb(213, 212, 210);
     justify-content: center;
-    align-items:baseline;
+    align-items:center;
    
 }
 
-/* Header logo Styling */
-
-.menu-area, .container .row{
-    margin:0px;
-    width: 100%;
-
- ul{
+/* Navigation Menu Styling */
+.mainmenu ul{
     display:flex;
     flex-direction: row;
     flex-wrap:wrap;
-    justify-content:flex-start;
+    justify-content:space-evenly;
     list-style: none;
-    margin:0px;
-    background-color: aqua; 
+
 }
 
-
-li{
-    margin: 10px;
+.mainmenu ul li{
+    margin:0px 10px;
     padding: 5px;
-    background-color: red;
     
 } 
 
-.header-logo, .mainmenu, .header-button{
-    margin:5px;
+.mainmenu ul li a{
+    text-decoration: none;
+    font-size: large;
+    
+}
+
+.mainmenu ul li a:hover{
+    color:rgb(138, 153, 23);
+}
+
+/* Button styling */
+.header-button button{
+    background-color: rgb(124, 49, 194);
+    color: White;
+    padding: 10px 20px;
+    border-radius: 5pc;
+    transition: background-color 0.4s ease;
+    cursor:pointer;
+    align-self: flex-start;
+}
+
+.header-button button:hover{
+    background-color: rgb(216, 222, 220);
+    color: black;
 }
