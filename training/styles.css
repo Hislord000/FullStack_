@@ -1,39 +1,41 @@
 body{
-    padding:0;
     background-image: url("./images/bg_image.jpeg");
     background-repeat: no-repeat;
-    background-size: cover;
-}
+    background-attachment: cover;
 
 
-/* menu area */
+} 
+
+
+/* Container Styling */
 header{
     width: 100%;
     max-width: 1200px;
-    height: 80px;
-    border:2px solid rgb(204, 200, 200);
-    border-radius:50px;
-    margin: 0 auto; 
-    background-color: bisque;
-
+    margin: 0 auto;
+    overflow: hidden;
 }
 
-/* Container Styling */
 .col-auto{
-    display:flex;    
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items:center;   
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;  
+    background-color:rgb(213, 212, 210);
+    align-items: center;
+   
 }
+/* Logo styling */
 
+.header-logo{
+    flex:0 0 auto;
+    margin:0 auto;
+}
 
 /* Navigation Menu Styling */
 .mainmenu ul{
     display:flex;
     flex-direction: row;
     flex-wrap:wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     list-style: none;
 
 }
@@ -55,6 +57,10 @@ header{
 }
 
 /* Button styling */
+
+.header-button{
+    margin: 0 auto;
+}
 .header-button button{
     background-color: rgb(124, 49, 194);
     color: White;
@@ -62,8 +68,10 @@ header{
     border-radius: 5pc;
     transition: background-color 0.4s ease;
     cursor:pointer;
-    align-self: flex-start;
+    flex:0 0 auto;
+
 }
+
 
 .header-button button:hover{
     background-color: rgb(216, 222, 220);
@@ -80,36 +88,19 @@ header{
 }
 
 .sec-container{
-    margin:3px 0px;
     display:flex;
     flex-direction:column;
-    justify-content:flex-start;
-    align-items: space-evenly;
-
+    align-items: center;
 }
 
 .sec{
-    flex:1 0 auto;
-    overflow: hidden;
+    flex-basis: 500px;
+    margin-top: 20px;
+    background-color: bisque;
 }
-
 
 .inline-sec2{
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    
-}
-
-
-
-.inline-sec2 h1{
-    flex: 1 1 200px;
 
 
 }
 
-.inline-sec2 article{
-    flex: 1 1 auto;
-
-}
